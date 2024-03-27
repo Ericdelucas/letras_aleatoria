@@ -1,0 +1,15 @@
+import random
+
+def pick_random_letter():
+    letters = ['A', 'B', 'C', 'D', 'E']
+    return random.choice(letters)
+
+def main():
+    num_iterations = int(input("Quantas vezes você deseja sortear uma letra? "))
+    
+    for _ in range(num_iterations):
+        letter = pick_random_letter()
+        print("Letra sorteada:", letter)
+
+if __name__ == "__main__":
+    main()
